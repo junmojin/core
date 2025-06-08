@@ -4,6 +4,7 @@ import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.Test;
 
 public class MemberServiceTest {
+    //MemberServiceTest : 회원 도메인 - 회원 가입 테스트
 
     MemberService memberService = new MemberServiceImpl();
 
