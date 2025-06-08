@@ -8,13 +8,14 @@ import hello.core.order.Order;
 import hello.core.order.OrderService;
 import hello.core.order.OrderServiceImpl;
 
-public class OrderApp {
+public class OrderApp { //주문 할인 정책 실행
     public static void main(String[] args) {
         MemberService memberService = new MemberServiceImpl();
         OrderService orderService = new OrderServiceImpl();
 
         Long memberId = 1L;
         Member member = new Member(memberId, "memberA", Grade.VIP);
+        memberService.join(member);
 
         Order order = orderService.createOrder(memberId, "itemA", 100000);
 
