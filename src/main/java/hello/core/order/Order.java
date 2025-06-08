@@ -1,7 +1,7 @@
 package hello.core.order;
 
 public class Order {
-
+ // Order : 주문 엔티티
     private Long memberId;
     private String itemName;
     private int itemPrice;
