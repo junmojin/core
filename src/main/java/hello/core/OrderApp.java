@@ -17,6 +17,7 @@ public class OrderApp { //주문 할인 정책 실행
        // MemberService memberService = appConfig.memberService();
        // OrderService orderService = appConfig.orderService();
 
+        //스프링 컨테이너 생성
         ApplicationContext applicationContext = new AnnotationConfigApplicationContext(AppConfig.class);
 
         MemberService memberService = applicationContext.getBean("memberService", MemberService.class);
